@@ -21,6 +21,8 @@ public class IoCTest {
         AccountDao accountDao = (AccountDao) applicationContext.getBean("accountDao");
 
         System.out.println(accountDao);
+        Account account = accountDao.queryAccountByCardNo("6029621011000");
+        System.out.println(account);
 
 
 
